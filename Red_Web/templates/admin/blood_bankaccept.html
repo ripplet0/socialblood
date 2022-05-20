@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+</head>
+
+<body>
+<form id="form1" name="form1" method="post" action="">
+  <table width="274" border="1">
+    <tr>
+      <th width="8" scope="row">#</th>
+      <td width="80">Name</td>
+      <td width="47">place</td>
+      <td width="47">pin</td>
+      <td width="35">Phone</td>
+      <td width="89">blood_group</td>
+      <td width="89"></td>
+    </tr>
+      {% for i in data %}
+    <tr>
+       <th scope="row">&nbsp;{{ loop.index }}</th>
+      <td>&nbsp;{{ i['name'] }}</td>
+      <td>&nbsp;{{ i['place'] }}</td>
+      <td>{{ i['pin'] }}</td>
+      <td>&nbsp;{{ i['Phone'] }}</td>
+      <td>&nbsp;{{ i['blood_group'] }}</td>
+      <td><p><a href="/accepted_bank/{{ i['bank_id'] }}">Accept</a></p>
+      <p><a href="/rejected_bank/{{ i['bank_id'] }}">Reject</a></p></td>
+    </tr>
+       {% endfor %}
+  </table>
+</form>
+
+</body>
+</html>

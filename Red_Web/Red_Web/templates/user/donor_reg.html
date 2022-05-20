@@ -1,0 +1,117 @@
+{% extends 'user/user_home.html'  %}
+{% block body %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<form id="form1" name="form1" method="post" action="" class="table tab-content">
+  <table width="400" border="1">
+    <tr>
+      <th scope="row">Name</th>
+      <td><label for="textfield2"></label>
+        <input type="text" name="textfield" id="textfield2" required/></td>
+    </tr>
+    <tr>
+    <td>Blood Group</td>
+    <td>
+      <label for="textfield1"></label>
+      <label for="select"></label>
+      <select name="select" id="select" required>
+          <option value="A+">A+</option>
+           <option value="B+">B+</option>
+           <option value="AB+">AB+</option>
+           <option value="AB-">AB-</option>
+           <option value="A-">A-</option>
+           <option value="B-">B-</option>
+           <option value="O+">O+</option>
+           <option value="O-">O-</option>
+      </select>
+
+    </td></tr>
+      <tr><td colspan="2"><h5 align="center">Contact Details</h5></td></tr>
+    <tr>
+      <th scope="row">Phone no</th>
+      <td><label for="textfield4"></label>
+        <input type="text" name="textfield1" id="textfield4" pattern="[6789][0123456789]{9}" required/></td>
+    </tr>
+
+      <tr>
+      <th scope="row">Place</th>
+      <td><label for="textfield7"></label>
+        <input type="text" name="textfield2" id="textfield7" required/></td>
+    </tr>
+     <tr>
+      <th scope="row">Post</th>
+      <td><label for="textfield7"></label>
+        <input type="text" name="textfield3" id="textfield7" required/></td>
+    </tr>
+     <tr>
+      <th scope="row">Pin</th>
+      <td><label for="textfield7"></label>
+        <input type="text" name="textfield4" id="textfield7" required/></td>
+    </tr>
+     <tr>
+      <th scope="row">State</th>
+      <td><label for="textfield7"></label>
+        <input type="text" name="textfield5" id="textfield7" required/></td>
+    </tr>
+       <tr>
+    <td>District</td>
+    <td>
+      <label for="textfield1"></label>
+      <label for="select3"></label>
+      <select name="select3" id="select" required>
+          <option value="Alappuzha">Alappuzha</option>
+           <option value="Ernakulam">Ernakulam</option>
+           <option value="Idukki">	Idukki</option>
+           <option value="Kannur">Kannur</option>
+           <option value="Kasaragod">Kasaragod</option>
+           <option value="Kollam">Kollam</option>
+           <option value="Kottayam">Kottayam</option>
+           <option value="Kozhikode">Kozhikode</option>
+           <option value="Malappuram">Malappuram</option>
+           <option value="Palakkad">Palakkad</option>
+           <option value="Pathanamthitta">Pathanamthitta</option>
+           <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+           <option value="Thrissur">Thrissur</option>
+           <option value="Wayanad">Wayanad</option>
+
+      </select>
+
+   </td>
+  </tr>
+
+
+    <tr>
+      <th scope="row">Email</th>
+
+      <td><label for="textfield5"></label>
+      <input type="email" name="textfield6" id="textfield5" required/></td>
+    </tr>
+
+       <tr>
+    <td>Blood Group Availability</td>
+    <td>
+      <label for="textfield1"></label>
+      <label for="select"></label>
+      <select name="select2" id="select">
+          <option value="A+">Available</option>
+           <option value="B+">Unavailable</option>
+
+      </select>
+
+   </td>
+  </tr>
+
+    <tr>
+      <th colspan="2" scope="row"><input type="submit" name="button" id="button" value="Submit" /></th>
+    </tr>
+  </table>
+</form>
+</body>
+</html>
+{% endblock %}

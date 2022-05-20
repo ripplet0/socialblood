@@ -1,0 +1,35 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body><form action="" method="get"><table width="225" border="1">
+  <tr>
+    <td width="8"><p>&nbsp;</p>
+      <p>#</p></td>
+    <td width="60">User name</td>
+    <td width="69">Needed blood group</td>
+    <td width="33">unit</td>
+    <td width="21">&nbsp;status</td>
+  </tr>
+    {% for i in data %}
+  <tr>
+    <td>&nbsp;{{ loop.index }}</td>
+    <td>{{ i['username'] }}</td>
+    <td>&nbsp;{{ i['rblood_group'] }}</td>
+    <td>{{ i['unit'] }}</td>
+      {% if i['status']=='pending' %}
+    <td><p><a href="{{ url_for('accepted_user_requset') }}/{{ i.user_request_id }}">Accept</a>
+      <a href="{{ url_for('rejected_user') }}/{{ i.user_request_id }}">Reject</a></p>
+    {% else %}
+  </td><td>{{ i.status }}</td>
+  {% endif %}
+  </tr>
+    {% endfor %}
+</table>
+</form>
+</body>
+</html>

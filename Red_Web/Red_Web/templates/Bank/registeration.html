@@ -1,0 +1,169 @@
+{##}
+{#<!DOCTYPE html>#}
+{#<html>#}
+{#	<head>#}
+{#		<meta charset="utf-8">#}
+{#		<title>Blood Bank Registration</title>#}
+{#		<meta name="viewport" content="width=device-width, initial-scale=1.0">#}
+{##}
+{#		<!-- MATERIAL DESIGN ICONIC FONT -->#}
+{#		<link rel="stylesheet" href="/static/register/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">#}
+{##}
+{#		<!-- STYLE CSS -->#}
+{#		<link rel="stylesheet" href="/static/register/css/style.css">#}
+{#        <style>#}
+{#             .account-type, .gender {#}
+{#      margin: 15px 0;#}
+{#      }#}
+{#        </style>#}
+{##}
+{#	</head>#}
+{##}
+{#	<body>#}
+{##}
+{#				<form action="" method="post">#}
+{#					<h3>Registration Form</h3>#}
+{#                     <hr>#}
+{#                     <div class="account-type">#}
+{#                      <input type="button" value="User" id="bt" name="account" />#}
+{#                      <label>User</label>#}
+{#                      <input type="button" value="none" id="bt1" name="account" />#}
+{#                      <label>Blood Bank</label>#}
+{#                    </div>#}
+{#                    <hr>#}
+{#                     <div class="w-100">#}
+{#                    <p class="social-media d-flex justify-content-end">#}
+{#                    <a href="/create_acc" class="social-icon d-flex align-items-center justify-content-center">User</a>#}
+{#                    <a href="/register" class="social-icon d-flex align-items-center justify-content-center">Blood Bank</a>#}
+{#                        </p>#}
+{#                            </div>#}
+{#					<div class="form-wrapper">#}
+{#						<input type="text" placeholder=" Name" name="textfield" class="form-control">#}
+{#						<i class="zmdi zmdi-account"></i>#}
+{#					</div>#}
+{#					<div class="form-wrapper">#}
+{#						<input type="text" placeholder="Email Address"  name="textfield2" class="form-control">#}
+{#						<i class="zmdi zmdi-email"></i>#}
+{#					</div>#}
+{#                    <div class="form-wrapper">#}
+{#                                           <li>#}
+{#                        <span><label for="phone">Enter your phone number</label></span>#}
+{#                            <select name="countryCode" class="country"  >#}
+{#                                <option data-countryCode="GB" value="91">(+91) INDIA </option>#}
+{#                                <option data-countryCode="GB" value="44">(+44) UK </option>#}
+{#                                <option data-countryCode="US" value="1">(+1) USA </option>#}
+{#                                <optgroup label="Other countries">#}
+{#                                   <option data-countryCode="DZ" value="213"> (+213)Algeria</option>#}
+{#                                   <option data-countryCode="AD" value="376"> (+376) Andorra</option>#}
+{#                                   <option data-countryCode="AO" value="244">(+244) Angola </option>#}
+{#                                   <option data-countryCode="AI" value="1264"> (+1264) Anguilla</option>#}
+{#                                   <option data-countryCode="AG" value="1268">(+1268) Antigua &amp; Barbuda </option>#}
+{#                                   <option data-countryCode="AR" value="54">(+54) Argentina </option>#}
+{#                                   <option data-countryCode="AM" value="374"> (+374) Armenia</option>#}
+{#                                   <option data-countryCode="AW" value="297">(+297) Aruba </option>#}
+{#                                   <option data-countryCode="AU" value="61"> (+61) Australia</option>#}
+{#                                   <option data-countryCode="AT" value="43">(+43) Austria </option>#}
+{#                                   <option data-countryCode="AZ" value="994"> (+994) Azerbaijan</option>#}
+{#                                   <option data-countryCode="BS" value="1242">(+1242)Bahamas </option>#}
+{#                                </optgroup>#}
+{#                            </select>#}
+{#                            <input id="phone" name="phone" type="text" autofocus/>#}
+{#                    </li>#}
+{#                           <i class="zmdi zmdi-phone"></i>#}
+{#					</div>#}
+{#                    <div class="form-wrapper">#}
+{#						<textarea type="textarea" placeholder="Full Address"  name="textarea" class="form-control" rows="" cols=""></textarea>#}
+{#					</div>#}
+{#					<div class="form-wrapper">#}
+{#						<input type="password" placeholder="Password"  name="textfield4" class="form-control">#}
+{#						<i class="zmdi zmdi-lock"></i>#}
+{#					</div>#}
+{#					<div class="form-wrapper">#}
+{#						<input type="password" placeholder="Confirm Password"  name="textfield6" class="form-control">#}
+{#						<i class="zmdi zmdi-lock"></i>#}
+{#					</div>#}
+{#					<button>Register#}
+{#						<i class="zmdi zmdi-arrow-right"></i>#}
+{#					</button>#}
+{#				</form>#}
+{#			</div>#}
+{#		</div>#}
+{##}
+{#	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->#}
+{#</html>#}
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Responsive Registration Form</title>
+  <link rel="stylesheet" href="/static/register/css/re.css">
+  <link rel="stylesheet" href="/static/register/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="form_wrapper">
+  <div class="form_container">
+    <div class="title_container">
+      <h2>Responsive Registration Form</h2>
+    </div>
+    <div class="row clearfix">
+      <div class="">
+        <form>
+          <div class="input_field"> <span><i class="zmdi zmdi-email"></i></span>
+            <input type="email" name="email" placeholder="Email" required />
+
+          </div>
+          <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+            <input type="password" name="password" placeholder="Password" required />
+          </div>
+          <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+            <input type="password" name="password" placeholder="Re-type Password" required />
+          </div>
+          <div class="row clearfix">
+            <div class="col_half">
+              <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                <input type="text" name="name" placeholder="First Name" />
+              </div>
+            </div>
+            <div class="col_half">
+              <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                <input type="text" name="name" placeholder="Last Name" required />
+              </div>
+            </div>
+          </div>
+            	<div class="input_field radio_option">
+              <input type="radio" name="radiogroup1" id="rd1">
+              <label for="rd1">Male</label>
+              <input type="radio" name="radiogroup1" id="rd2">
+              <label for="rd2">Female</label>
+              <input type="radio" name="radiogroup1" id="rd3">
+              <label for="rd1">Other</label>
+              </div>
+              <div class="input_field select_option">
+                <select>
+                  <option>Select a country</option>
+                  <option>Option 1</option>
+                  <option>Option 2</option>
+                </select>
+                  <i class="zmdi zmdi-caret-down" style="font-size: 17px"></i>
+              </div>
+            <div class="input_field checkbox_option">
+            	<input type="checkbox" id="cb1">
+    			<label for="cb1">I agree with terms and conditions</label>
+            </div>
+            <div class="input_field checkbox_option">
+            	<input type="checkbox" id="cb2">
+    			<label for="cb2">I want to receive the newsletter</label>
+            </div>
+          <input class="button" type="submit" value="Register" />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<p class="credit">Developed by <a href="http://www.designtheway.com" target="_blank">Design the way</a></p>
+<!-- partial -->
+  <script src='https://use.fontawesome.com/4ecc3dbb0b.js'></script>
+</body>
+</html>

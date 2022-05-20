@@ -1,0 +1,40 @@
+@app.route('/emission_noti2',methods=['post'])
+def emission_noti2():
+    db=Db()
+    email=request.form['amt']
+
+    notification=request.form['edate']
+    qry=db.selectOne("select * from userregistration where email='"+email+"' ")
+
+
+    if qry is not None:
+
+        try:
+            gmail = smtplib.SMTP('smtp.gmail.com', 587)
+
+            gmail.ehlo()
+
+            gmail.starttls()
+
+            gmail.login('rissavanir@gmail.com', 'riss.trainee')
+
+        except Exception as e:
+         print("Couldn't setup email!!" + str(e))
+
+        msg = MIMEText("EMISSION VALIDITY EXPIRYING ON " + str(notification))
+
+        msg['Subject'] = 'EMISSION VALIDITY'
+
+        msg['To'] = email
+
+        msg['From'] = 'rissavanir@gmail.com'
+
+        try:
+
+            gmail.send_message(msg)
+
+        except Exception as e:
+
+            print("COULDN'T SEND EMAIL", str(e))
+    return '''<script>alert("Mail Send successfully");window.location='/emi_result'</script>'''
+# ===========================================================================================

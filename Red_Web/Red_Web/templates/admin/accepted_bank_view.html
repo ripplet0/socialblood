@@ -1,0 +1,47 @@
+{% extends 'admin/AdminHome.html' %}
+{% block body %}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<form id="form1" name="form1" method="post" action="" class="table tab-content">
+  <table width="274" border="1">
+    <tr>
+        <th width="8" scope="row">#</th>
+        <td width="100">Bank_Name</td>
+        <td width="100">Place</td>
+        <td width="100">Pin</td>
+      <td width="80">phone</td>
+
+    </tr>
+      {% for i in data %}
+    <tr>
+      <th scope="row">&nbsp;{{ loop.index }}</th>
+      <td>&nbsp;{{ i['name'] }}</td>
+      <td>{{ i['place'] }}&nbsp;</td>
+      <td>{{ i['pin'] }}&nbsp;</td>
+      <td>&nbsp;{{ i['Phone'] }}</td>
+    </tr>
+      {% endfor %}
+  </table>
+</form>
+
+</body>
+</html>
+
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends 'admin/AdminHome.html' %}
+{% block body %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+</head>
+
+<body>
+<form action="" method="post"><table width="200" border="" class="table tab-content">
+  <tr>
+    <td>#</td>
+    <td>username</td>
+    <td>feedback</td>
+    <td>date</td>
+    
+  </tr>
+{% for i in data %}
+  <tr>
+      <th scope="row">&nbsp;{{ loop.index }}</th>
+    <td>{{i['username']  }}</td>
+    <td>{{ i['feedbacks'] }}</td>
+    <td>&nbsp;{{i['feedback_date']}}</td>
+ </tr>
+      {% endfor %}
+</table>
+</form>
+</body>
+</html>
+{% endblock %}

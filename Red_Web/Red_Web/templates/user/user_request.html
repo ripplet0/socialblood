@@ -1,0 +1,41 @@
+{% extends 'user/user_home.html' %}
+{% block body %}
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset=utf-8" />
+<title>User Request</title>
+</head>
+
+<body><form action="" method="post">
+<table width="200" border="1">
+      <tr>
+    <td>Blood Group</td>
+    <td>
+     <label for="textfield1"></label>
+      <label for="select"></label>
+      <input required list="blood" name="select" id="select">
+            <datalist id="blood">
+           <option value="A+">A+</option>
+           <option value="B+">B+</option>
+           <option value="AB+">AB+</option>
+           <option value="AB-">AB-</option>
+           <option value="A-">A-</option>
+           <option value="B-">B-</option>
+           <option value="O+">O+</option>
+           <option value="O-">O-</option>
+      </datalist></td>
+  </tr>
+    <tr>
+      <td>Unit</td>
+      <td>
+      <input required min="1" max="10" type="number" name="textfield2" id="textfield2" /></td>
+    </tr>
+
+    <tr>
+      <td colspan="2"><input type="submit" name="button" id="button" value="submit" /></td>
+    </tr>
+  </table></form>
+</body>
+</html>
+{% endblock %}

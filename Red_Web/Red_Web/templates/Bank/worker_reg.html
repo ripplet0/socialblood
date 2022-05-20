@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>RegistrationForm</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="/static/reg/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="/static/reg/css/style.css">
+	</head>
+
+	<body>
+
+		<div class="wrapper">
+			<div class="inner">
+				<form action="/worker_registr" method="post" enctype="multipart/form-data">
+					<h3>REGISTER NOW</h3>
+					<div class="form-wrapper form-price">
+						<label for="">NAME</label>
+						&nbsp;&nbsp;<span><input type="text" name="textfield" required> </span>
+					</div>
+                    <div class="form-wrapper form-price">
+						<label for="">HOUSE NAME</label>
+						&nbsp;&nbsp;<span><input type="text" name="textfield2" required> </span>
+					</div>
+                    <div class="form-wrapper form-price">
+						<label for="">PLACE</label>
+						&nbsp;&nbsp;<span><input type="text" name="textfield3" required> </span>
+					</div>
+                    <div class="form-wrapper form-price">
+						<label for="">POST</label>
+						&nbsp;&nbsp;<span><input type="text" name="textfield4" required> </span>
+					</div>
+                    <div class="form-wrapper form-price">
+						<label for="">PIN</label>
+						&nbsp;&nbsp;<span><input type="number" name="textfield5" required> </span>
+					</div>
+                    <div class="form-wrapper form-price">
+						<label for="">DOB</label>
+						&nbsp;&nbsp;<span><input type="date" name="textfield6" required> </span>
+					</div>
+                          <div class="form-wrapper form-price">
+						<label for="">PHOTO</label>
+						&nbsp;&nbsp;&nbsp;&nbsp;<span><input type="file" name="fileField" required> </span>
+					</div>
+
+                          <div class="form-wrapper form-price">
+						<label for="">PHONE NUMBER</label>
+						&nbsp;&nbsp;<span><input type="text" name="textfield7" required pattern="[6789][0123456789]{9}" maxlength="10"> </span>
+					</div>
+					<div class="form-wrapper form-select">
+						<label for="">CATEGORY</label>
+						<div >
+							<select name="select" id="" >
+								<option value="Carpenter" class="option">Carpenter</option>
+								<option value="Plumber" class="option">Plumber</option>
+								<option value="Electrician" class="option">Electrician</option>
+								<option value="Painter" class="option">Painter</option>
+								<option value="Gardener" class="option">Gardener</option>
+								<option value="Helper" class="option">Helper</option>
+
+							</select>
+							<i class="zmdi zmdi-chevron-down"></i>
+						</div>
+					</div>
+					<div class="form-wrapper">
+						<label for="" class="label-input">EXPERIENCE</label>
+						&nbsp;&nbsp;<input type="text" name="textfield9" required>
+					</div>
+					<div class="form-wrapper">
+						<label for="" class="label-input">GENDER</label>
+						<input type="radio" name="RadioGroup1" value="Male" required>Male
+						<input type="radio" name="RadioGroup1" value="Female" required>Female
+						<input type="radio" name="RadioGroup1" value="other" required>Other
+					</div>
+                    	<div class="form-wrapper">
+						<label for="" class="label-input">EMAIL</label>
+						&nbsp;&nbsp;<input type="text" name="textfield11" required pattern="[^@]*@[^@]*">
+					</div>
+
+					<button>REGISTER</button>&nbsp;&nbsp;&nbsp;<a href="/">already have an account? sign in</a>
+				</form>
+				<div class="image-holder">
+					<img src="/static/reg/images/ip1.webp" alt="" width="580" height="672">
+				</div>
+			</div>
+		</div>
+
+		<script src="/static/reg/js/jquery-3.3.1.min.js"></script>
+		<script src="/static/reg/js/main.js"></script>
+	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
